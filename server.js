@@ -13,7 +13,7 @@ let allStocks = [
   { symbol: "INFY", name: "Infosys", price: 1845.20, change: -1.50 },
   { symbol: "IDEA", name: "Vodafone Idea", price: 15.20, change: -6.20 },
   { symbol: "YESBANK", name: "Yes Bank", price: 24.50, change: -4.10 },
-  { symbol: "GOLD", name: "Gold", price: 133575, change: 5.5},
+  { symbol: "BITCOIN", name: "Btc", price: 56324, change: 4.2},
 ];
 
 app.get('/api/all-stocks', (req, res) => {
