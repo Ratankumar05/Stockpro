@@ -15,6 +15,14 @@ let allStocks = [
   { symbol: "YESBANK", name: "Yes Bank", price: 24.50, change: -4.10 },
   { symbol: "BITCOIN", name: "Btc", price: 56324, change: 4.2},
 ];
+// Price ko har 2 second me hilao
+setInterval(() => {
+  allStocks.forEach(s => {
+    let move = (Math.random() - 0.48) * s.price * 0.002;
+    s.price = +(s.price + move).toFixed(2);
+    s.change = +(parseFloat(s.change) + (Math.random() - 0.5) * 0.2).toFixed(2);
+  });
+}, 2000);
 
 app.get('/api/all-stocks', (req, res) => {
   res.json(allStocks);
