@@ -12,7 +12,8 @@ let allStocks = [
   { symbol: "RELIANCE", name: "Reliance", price: 2980.00, change: 1.20 },
   { symbol: "INFY", name: "Infosys", price: 1845.20, change: -1.50 },
   { symbol: "IDEA", name: "Vodafone Idea", price: 15.20, change: -6.20 },
-  { symbol: "YESBANK", name: "Yes Bank", price: 24.50, change: -4.10 }
+  { symbol: "YESBANK", name: "Yes Bank", price: 24.50, change: -4.10 },
+  { symbol: "GOLD", name: "Gold", price: 133575, change: 5.5},
 ];
 
 app.get('/api/all-stocks', (req, res) => {
