@@ -15,6 +15,7 @@ let allStocks = [
   { symbol: "YESBANK", name: "Yes Bank", price: 24.50, change: -4.10 },
   { symbol: "BITCOIN", name: "Btc", price: 56324, change: 4.2},
   { symbol: "NIFTY50", name: "Nifty", price: 25800.60, change:52},
+  { symbol: "HDFC Bank ltd", name: "HDFC", price: 845.50, change: 5.2},
 ];
 // Price ko har 2 second me hilao
 setInterval(() => {
